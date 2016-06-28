@@ -15,6 +15,7 @@
 		3BF49B871D2215A400C08108 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B861D2215A400C08108 /* AddTableViewController.swift */; };
 		3BF49B891D2215B100C08108 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B881D2215B100C08108 /* DiscoverTableViewController.swift */; };
 		3BF49B8B1D2215BE00C08108 /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B8A1D2215BE00C08108 /* MeTableViewController.swift */; };
+		3BF49B8E1D2259BC00C08108 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BF49B8D1D2259BC00C08108 /* MainVCSettings.json */; };
 		6483BB1EDEBF14EFA70C743D /* Pods_WMJWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85A0CDFDD0AE21DB39B240A /* Pods_WMJWeiBo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		3BF49B861D2215A400C08108 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
 		3BF49B881D2215B100C08108 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		3BF49B8A1D2215BE00C08108 /* MeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
+		3BF49B8D1D2259BC00C08108 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		B117AD1099D64313A684CB82 /* Pods-WMJWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMJWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMJWeiBo/Pods-WMJWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		D85A0CDFDD0AE21DB39B240A /* Pods_WMJWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMJWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF940D28F6903869D1BDAB17 /* Pods-WMJWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMJWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMJWeiBo/Pods-WMJWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		3BF49B7A1D2214AA00C08108 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3BF49B8C1D2259BC00C08108 /* sources */,
 				3BF49B801D22154C00C08108 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -142,6 +145,14 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		3BF49B8C1D2259BC00C08108 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				3BF49B8D1D2259BC00C08108 /* MainVCSettings.json */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 		D07E25714A536B8D80540F3D /* Frameworks */ = {
@@ -222,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF49B8E1D2259BC00C08108 /* MainVCSettings.json in Resources */,
 				3BF49B751D21344F00C08108 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

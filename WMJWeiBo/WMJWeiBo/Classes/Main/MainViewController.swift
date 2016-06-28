@@ -28,13 +28,42 @@ class MainViewController: UITabBarController {
 //        addChildViewController(MessageTableViewController(), title: "我", imageName: "tabbar_profile")
         
         //通过字符串创建
-        addChildViewController("HomeTableViewController", title: "首页", imageName:"tabbar_home" )
-
-        addChildViewController("MessageTableViewController", title: "消息", imageName: "tabbar_message_center")
-
-        addChildViewController("DiscoverTableViewController", title: "广场", imageName: "tabbar_discover")
-
-        addChildViewController("MessageTableViewController", title: "我", imageName: "tabbar_profile")
+//        addChildViewController("HomeTableViewController", title: "首页", imageName:"tabbar_home" )
+//
+//        addChildViewController("MessageTableViewController", title: "消息", imageName: "tabbar_message_center")
+//
+//        addChildViewController("DiscoverTableViewController", title: "广场", imageName: "tabbar_discover")
+//
+//        addChildViewController("MessageTableViewController", title: "我", imageName: "tabbar_profile")
+        
+        //从文件中读取字符串创建类
+        guard let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil) else{
+            WMJLog("json文件不存在")
+            return
+        }
+        
+        guard let jsonData = NSData(contentsOfFile: path) else{
+            WMJLog("数据加载失败")
+            return
+        }
+        
+        do {
+           
+            
+            let jsonArr = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
+            
+            for dict in jsonArr as![[String:String]]{
+                addChildViewController(dict["vcName"]! as String, title: dict["title"]! as String, imageName: dict["imageName"]! as String)
+            }
+        }catch{
+            addChildViewController("HomeTableViewController", title: "首页", imageName:"tabbar_home" )
+    
+            addChildViewController("MessageTableViewController", title: "消息", imageName: "tabbar_message_center")
+    
+            addChildViewController("DiscoverTableViewController", title: "广场", imageName: "tabbar_discover")
+    
+            addChildViewController("MessageTableViewController", title: "我", imageName: "tabbar_profile")
+        }
         
     }
 
@@ -42,7 +71,9 @@ class MainViewController: UITabBarController {
     func addChildViewController(childControllerString: String,title:String,imageName:String) {
         
         //获取命名空间，一个项目的命名空间就是该项目的名称
-        let nameSpace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
+        guard let nameSpace = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as? String else{
+            return
+        }
         let classNameStr = nameSpace + "." + childControllerString
         let cls:AnyClass =  NSClassFromString(classNameStr)!
         
