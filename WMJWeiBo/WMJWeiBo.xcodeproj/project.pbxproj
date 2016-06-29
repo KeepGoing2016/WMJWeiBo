@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B369DAB1D2368AC009EBE44 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */; };
 		3BF49B5F1D21313100C08108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B5E1D21313100C08108 /* AppDelegate.swift */; };
 		3BF49B751D21344F00C08108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF49B741D21344F00C08108 /* Assets.xcassets */; };
 		3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B801D22154C00C08108 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3BF49B5B1D21313100C08108 /* WMJWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMJWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF49B5E1D21313100C08108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF49B6A1D21313100C08108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		3BF49B7D1D2214AA00C08108 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				3BF49B8B1D2215BE00C08108 /* MeTableViewController.swift in Sources */,
 				3BF49B851D22158900C08108 /* MessageTableViewController.swift in Sources */,
 				3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */,
+				3B369DAB1D2368AC009EBE44 /* UIButton+Extension.swift in Sources */,
 				3BF49B891D2215B100C08108 /* DiscoverTableViewController.swift in Sources */,
 				3BF49B871D2215A400C08108 /* AddTableViewController.swift in Sources */,
 			);

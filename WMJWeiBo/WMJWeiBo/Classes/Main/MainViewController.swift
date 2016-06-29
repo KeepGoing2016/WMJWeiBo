@@ -22,23 +22,7 @@ class MainViewController: UITabBarController {
         tabBar.addSubview(addButton)
     }
     
-   private lazy var addButton:UIButton = {
-        ()-> UIButton in
-        let addButton = UIButton()
-        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
-        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
-        addButton.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
-        addButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
-        addButton.sizeToFit()
-        addButton.addTarget(self, action: Selector("clickedAddButton"), forControlEvents: UIControlEvents.TouchUpInside)
-        return addButton
-
-    }()
-    
-    @objc private func clickedAddButton()->Void{
-        WMJLog("点击了加号按钮")
-    }
-
+   
     private func addChildviewControllers()->Void{
         
         //通过传入类创建
@@ -116,5 +100,27 @@ class MainViewController: UITabBarController {
         
        WMJLog(title)
     }
+    
+    private lazy var addButton:UIButton = {
+        ()-> UIButton in
+//        let addButton = UIButton()
+//        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
+//        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
+//        addButton.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
+//        addButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
+//        addButton.sizeToFit()
+//        addButton.addTarget(self, action: Selector("clickedAddButton"), forControlEvents: UIControlEvents.TouchUpInside)
+//        return addButton
+        
+        let addButton = UIButton(foreImage: "tabbar_compose_icon_add", backgroundImage: "tabbar_compose_button")
+        addButton.addTarget(self, action: Selector("clickedAddButton"), forControlEvents: UIControlEvents.TouchUpInside)
+        return addButton
+        
+    }()
+    
+    @objc private func clickedAddButton()->Void{
+        WMJLog("点击了加号按钮")
+    }
+
     
 }
