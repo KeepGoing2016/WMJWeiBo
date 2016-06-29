@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        vc.view.backgroundColor = UIColor.redColor()
 //        window?.rootViewController = vc
 //        window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+        
         return true
     }
 

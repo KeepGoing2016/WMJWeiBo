@@ -14,6 +14,9 @@
 		3B369DB31D237A8C009EBE44 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DB21D237A8C009EBE44 /* Add.storyboard */; };
 		3B369DB51D237A9C009EBE44 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DB41D237A9C009EBE44 /* Discover.storyboard */; };
 		3B369DB71D237AAA009EBE44 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DB61D237AAA009EBE44 /* Me.storyboard */; };
+		3B369DB91D2395F7009EBE44 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DB81D2395F7009EBE44 /* BaseTableViewController.swift */; };
+		3B369DBB1D23971D009EBE44 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DBA1D23971D009EBE44 /* VisitorView.xib */; };
+		3B369DBD1D239753009EBE44 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DBC1D239753009EBE44 /* VisitorView.swift */; };
 		3BF49B5F1D21313100C08108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B5E1D21313100C08108 /* AppDelegate.swift */; };
 		3BF49B751D21344F00C08108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF49B741D21344F00C08108 /* Assets.xcassets */; };
 		3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B801D22154C00C08108 /* MainViewController.swift */; };
@@ -34,6 +37,9 @@
 		3B369DB21D237A8C009EBE44 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Add.storyboard; path = ../Main/Add.storyboard; sourceTree = "<group>"; };
 		3B369DB41D237A9C009EBE44 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
 		3B369DB61D237AAA009EBE44 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Me.storyboard; path = ../Main/Me.storyboard; sourceTree = "<group>"; };
+		3B369DB81D2395F7009EBE44 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		3B369DBA1D23971D009EBE44 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		3B369DBC1D239753009EBE44 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		3BF49B5B1D21313100C08108 /* WMJWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMJWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF49B5E1D21313100C08108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF49B6A1D21313100C08108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 				3BF49B8C1D2259BC00C08108 /* sources */,
 				3BF49B801D22154C00C08108 /* MainViewController.swift */,
 				3B369DAC1D23709A009EBE44 /* Main.storyboard */,
+				3B369DB81D2395F7009EBE44 /* BaseTableViewController.swift */,
+				3B369DBA1D23971D009EBE44 /* VisitorView.xib */,
+				3B369DBC1D239753009EBE44 /* VisitorView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -262,6 +271,7 @@
 				3B369DB51D237A9C009EBE44 /* Discover.storyboard in Resources */,
 				3B369DB71D237AAA009EBE44 /* Me.storyboard in Resources */,
 				3B369DAF1D237A5F009EBE44 /* Home.storyboard in Resources */,
+				3B369DBB1D23971D009EBE44 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B369DB91D2395F7009EBE44 /* BaseTableViewController.swift in Sources */,
 				3BF49B831D22156D00C08108 /* HomeTableViewController.swift in Sources */,
 				3BF49B5F1D21313100C08108 /* AppDelegate.swift in Sources */,
 				3BF49B8B1D2215BE00C08108 /* MeTableViewController.swift in Sources */,
 				3BF49B851D22158900C08108 /* MessageTableViewController.swift in Sources */,
 				3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */,
 				3B369DAB1D2368AC009EBE44 /* UIButton+Extension.swift in Sources */,
+				3B369DBD1D239753009EBE44 /* VisitorView.swift in Sources */,
 				3BF49B891D2215B100C08108 /* DiscoverTableViewController.swift in Sources */,
 				3BF49B871D2215A400C08108 /* AddTableViewController.swift in Sources */,
 			);
