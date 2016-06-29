@@ -15,8 +15,31 @@ class MainViewController: UITabBarController {
 
         addChildviewControllers()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        addButton.center = CGPointMake(self.tabBar.center.x, self.tabBar.frame.size.height/2)
+        tabBar.addSubview(addButton)
+    }
+    
+   private lazy var addButton:UIButton = {
+        ()-> UIButton in
+        let addButton = UIButton()
+        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
+        addButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
+        addButton.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
+        addButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
+        addButton.sizeToFit()
+        addButton.addTarget(self, action: Selector("clickedAddButton"), forControlEvents: UIControlEvents.TouchUpInside)
+        return addButton
 
-    func addChildviewControllers()->Void{
+    }()
+    
+    @objc private func clickedAddButton()->Void{
+        WMJLog("点击了加号按钮")
+    }
+
+    private func addChildviewControllers()->Void{
         
         //通过传入类创建
 //        addChildViewController(HomeTableViewController(), title: "首页", imageName:"tabbar_home" )
@@ -59,6 +82,8 @@ class MainViewController: UITabBarController {
             addChildViewController("HomeTableViewController", title: "首页", imageName:"tabbar_home" )
     
             addChildViewController("MessageTableViewController", title: "消息", imageName: "tabbar_message_center")
+            
+            addChildViewController("AddTableViewController", title: "", imageName: "")
     
             addChildViewController("DiscoverTableViewController", title: "广场", imageName: "tabbar_discover")
     
