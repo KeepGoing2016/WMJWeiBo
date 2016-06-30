@@ -17,6 +17,11 @@
 		3B369DB91D2395F7009EBE44 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DB81D2395F7009EBE44 /* BaseTableViewController.swift */; };
 		3B369DBB1D23971D009EBE44 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DBA1D23971D009EBE44 /* VisitorView.xib */; };
 		3B369DBD1D239753009EBE44 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DBC1D239753009EBE44 /* VisitorView.swift */; };
+		3B369DC11D23BF45009EBE44 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DC01D23BF45009EBE44 /* UIBarButtonItem+Extension.swift */; };
+		3B369DC31D23C5D9009EBE44 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DC21D23C5D9009EBE44 /* TitleButton.swift */; };
+		3B369DC51D24B7F5009EBE44 /* HomeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DC41D24B7F5009EBE44 /* HomeMenu.storyboard */; };
+		3B369DC71D24B914009EBE44 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DC61D24B914009EBE44 /* HomeMenuViewController.swift */; };
+		3B369DCA1D24C55D009EBE44 /* WMJPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DC91D24C55D009EBE44 /* WMJPresentationController.swift */; };
 		3BF49B5F1D21313100C08108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B5E1D21313100C08108 /* AppDelegate.swift */; };
 		3BF49B751D21344F00C08108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF49B741D21344F00C08108 /* Assets.xcassets */; };
 		3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF49B801D22154C00C08108 /* MainViewController.swift */; };
@@ -40,6 +45,11 @@
 		3B369DB81D2395F7009EBE44 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		3B369DBA1D23971D009EBE44 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		3B369DBC1D239753009EBE44 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		3B369DC01D23BF45009EBE44 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		3B369DC21D23C5D9009EBE44 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		3B369DC41D24B7F5009EBE44 /* HomeMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeMenu.storyboard; sourceTree = "<group>"; };
+		3B369DC61D24B914009EBE44 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
+		3B369DC91D24C55D009EBE44 /* WMJPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMJPresentationController.swift; sourceTree = "<group>"; };
 		3BF49B5B1D21313100C08108 /* WMJWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMJWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF49B5E1D21313100C08108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF49B6A1D21313100C08108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B369DC81D24C009009EBE44 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3B369DC41D24B7F5009EBE44 /* HomeMenu.storyboard */,
+				3B369DC61D24B914009EBE44 /* HomeMenuViewController.swift */,
+				3B369DC91D24C55D009EBE44 /* WMJPresentationController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		3BF49B521D21313100C08108 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +152,7 @@
 		3BF49B791D2214AA00C08108 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3B369DC81D24C009009EBE44 /* Menu */,
 				3B369DAE1D237A5F009EBE44 /* Home.storyboard */,
 				3BF49B821D22156D00C08108 /* HomeTableViewController.swift */,
 			);
@@ -173,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */,
+				3B369DC01D23BF45009EBE44 /* UIBarButtonItem+Extension.swift */,
+				3B369DC21D23C5D9009EBE44 /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -267,6 +290,7 @@
 				3BF49B8E1D2259BC00C08108 /* MainVCSettings.json in Resources */,
 				3B369DB11D237A7A009EBE44 /* Message.storyboard in Resources */,
 				3BF49B751D21344F00C08108 /* Assets.xcassets in Resources */,
+				3B369DC51D24B7F5009EBE44 /* HomeMenu.storyboard in Resources */,
 				3B369DB31D237A8C009EBE44 /* Add.storyboard in Resources */,
 				3B369DB51D237A9C009EBE44 /* Discover.storyboard in Resources */,
 				3B369DB71D237AAA009EBE44 /* Me.storyboard in Resources */,
@@ -335,10 +359,14 @@
 				3BF49B5F1D21313100C08108 /* AppDelegate.swift in Sources */,
 				3BF49B8B1D2215BE00C08108 /* MeTableViewController.swift in Sources */,
 				3BF49B851D22158900C08108 /* MessageTableViewController.swift in Sources */,
+				3B369DC11D23BF45009EBE44 /* UIBarButtonItem+Extension.swift in Sources */,
+				3B369DCA1D24C55D009EBE44 /* WMJPresentationController.swift in Sources */,
 				3BF49B811D22154C00C08108 /* MainViewController.swift in Sources */,
 				3B369DAB1D2368AC009EBE44 /* UIButton+Extension.swift in Sources */,
 				3B369DBD1D239753009EBE44 /* VisitorView.swift in Sources */,
+				3B369DC71D24B914009EBE44 /* HomeMenuViewController.swift in Sources */,
 				3BF49B891D2215B100C08108 /* DiscoverTableViewController.swift in Sources */,
+				3B369DC31D23C5D9009EBE44 /* TitleButton.swift in Sources */,
 				3BF49B871D2215A400C08108 /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
