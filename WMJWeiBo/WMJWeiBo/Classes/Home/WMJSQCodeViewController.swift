@@ -52,5 +52,12 @@ extension WMJSQCodeViewController:UITabBarDelegate{
     func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         
         heightConstraint.constant = item.title == "二维码" ? 300:150
+        
+//        view.layoutIfNeeded()
+        
+        view.layer.removeAllAnimations()
+        
+        startAnimation()
+        
     }
 }
