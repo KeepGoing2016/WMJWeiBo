@@ -9,6 +9,9 @@
 import UIKit
 
 class WMJPresentationController: UIPresentationController {
+    
+    var poperframe:CGRect = CGRectZero
+    
     /*
     1.如果不自定义转场modal出来的控制器会移除原有的控制器
     2.如果自定义转场modal出来的控制器不会移除原有的控制器
@@ -25,7 +28,7 @@ class WMJPresentationController: UIPresentationController {
 
         
         // 设置弹出视图的尺寸
-        presentedView()?.frame = CGRect(x: 100, y: 45, width: 200, height: 200)
+        presentedView()?.frame = poperframe
         
         containerView?.insertSubview(backgroundButton, atIndex: 0)
         backgroundButton.addTarget(self, action: Selector("clickedBackgroundBtn"), forControlEvents: UIControlEvents.TouchUpInside)
