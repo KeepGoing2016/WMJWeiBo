@@ -10,6 +10,7 @@
 		3B31F8F21D260F69005B2495 /* WMJPoperTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31F8F11D260F69005B2495 /* WMJPoperTransitionManager.swift */; };
 		3B31F8F71D2641A3005B2495 /* SQCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B31F8F61D2641A3005B2495 /* SQCode.storyboard */; };
 		3B31F8F91D2644EC005B2495 /* WMJSQCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31F8F81D2644EC005B2495 /* WMJSQCodeViewController.swift */; };
+		3B31F8FB1D2A073D005B2495 /* WMJSQCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B31F8FA1D2A073D005B2495 /* WMJSQCodeCreateViewController.swift */; };
 		3B369DAB1D2368AC009EBE44 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */; };
 		3B369DAD1D23709A009EBE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DAC1D23709A009EBE44 /* Main.storyboard */; };
 		3B369DAF1D237A5F009EBE44 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B369DAE1D237A5F009EBE44 /* Home.storyboard */; };
@@ -40,6 +41,7 @@
 		3B31F8F11D260F69005B2495 /* WMJPoperTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMJPoperTransitionManager.swift; sourceTree = "<group>"; };
 		3B31F8F61D2641A3005B2495 /* SQCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SQCode.storyboard; sourceTree = "<group>"; };
 		3B31F8F81D2644EC005B2495 /* WMJSQCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMJSQCodeViewController.swift; sourceTree = "<group>"; };
+		3B31F8FA1D2A073D005B2495 /* WMJSQCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMJSQCodeCreateViewController.swift; sourceTree = "<group>"; };
 		3B369DAA1D2368AC009EBE44 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3B369DAC1D23709A009EBE44 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3B369DAE1D237A5F009EBE44 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				3B31F8F61D2641A3005B2495 /* SQCode.storyboard */,
 				3B31F8F81D2644EC005B2495 /* WMJSQCodeViewController.swift */,
+				3B31F8FA1D2A073D005B2495 /* WMJSQCodeCreateViewController.swift */,
 			);
 			name = ScanCode;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				3BF49B891D2215B100C08108 /* DiscoverTableViewController.swift in Sources */,
 				3B369DC31D23C5D9009EBE44 /* TitleButton.swift in Sources */,
 				3B31F8F21D260F69005B2495 /* WMJPoperTransitionManager.swift in Sources */,
+				3B31F8FB1D2A073D005B2495 /* WMJSQCodeCreateViewController.swift in Sources */,
 				3BF49B871D2215A400C08108 /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
