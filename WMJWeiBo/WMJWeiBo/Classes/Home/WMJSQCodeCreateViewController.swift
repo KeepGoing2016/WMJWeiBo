@@ -20,7 +20,7 @@ class WMJSQCodeCreateViewController: UIViewController {
         filter?.setDefaults()
         // 3.设置需要生成二维码的数据到滤镜中
         // OC中要求设置的是一个二进制数据
-        filter?.setValue("小曼君".dataUsingEncoding(NSUTF8StringEncoding), forKeyPath: "InputMessage")
+        filter?.setValue("微博".dataUsingEncoding(NSUTF8StringEncoding), forKeyPath: "InputMessage")
         // 4.从滤镜从取出生成好的二维码图片
         guard let ciImage = filter?.outputImage else
         {

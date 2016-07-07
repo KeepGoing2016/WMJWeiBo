@@ -8,8 +8,6 @@
 
 import UIKit
 
-let WMJTransitionManagerDidPresent = "WMJTransitionManagerDidPresent"//>弹出动画
-let WMJTransitionManagerDidDismiss = "WMJTransitionManagerDidDismiss"//>消失动画
 
 class WMJPoperTransitionManager: NSObject,UIViewControllerTransitioningDelegate,UIViewControllerAnimatedTransitioning {
     

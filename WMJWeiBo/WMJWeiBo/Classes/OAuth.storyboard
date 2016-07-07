@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MvP-cI-NMW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="4Eq-SK-f1b">
+            <objects>
+                <viewController id="MvP-cI-NMW" customClass="OAuthViewController" customModule="WMJWeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C1k-XF-zRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="PUD-s2-E4T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l20-xz-zQH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzo-YF-b9P">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MvP-cI-NMW" id="ZPn-WC-OGb"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mzo-YF-b9P" firstAttribute="leading" secondItem="l20-xz-zQH" secondAttribute="leading" id="8Vo-pU-Wen"/>
+                            <constraint firstAttribute="trailing" secondItem="mzo-YF-b9P" secondAttribute="trailing" id="AQl-WZ-3kA"/>
+                            <constraint firstItem="mzo-YF-b9P" firstAttribute="top" secondItem="C1k-XF-zRE" secondAttribute="bottom" id="BsG-l2-PR9"/>
+                            <constraint firstItem="PUD-s2-E4T" firstAttribute="top" secondItem="mzo-YF-b9P" secondAttribute="bottom" id="Dvp-1e-jJU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="mzo-YF-b9P" id="kcd-vV-b1G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TS2-nA-Rpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="334"/>
+        </scene>
+    </scenes>
+</document>

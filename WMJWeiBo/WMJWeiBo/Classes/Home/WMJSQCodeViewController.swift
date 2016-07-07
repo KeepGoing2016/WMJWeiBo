@@ -29,6 +29,10 @@ class WMJSQCodeViewController: UIViewController {
         startSQCode()
     }
     
+    private func setScaneara(){
+        
+    }
+    
     override func viewWillAppear(animated: Bool) {
         startAnimation()
     }

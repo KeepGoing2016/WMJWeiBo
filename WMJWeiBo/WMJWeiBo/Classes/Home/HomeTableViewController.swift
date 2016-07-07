@@ -33,7 +33,7 @@ class HomeTableViewController: BaseTableViewController {
     
     private lazy var titleView:TitleButton = {
         let title = TitleButton()
-        title.setTitle("小曼君", forState: UIControlState.Normal)
+        title.setTitle("微博", forState: UIControlState.Normal)
         title.setImage(UIImage(named: "navigationbar_arrow_down"), forState: UIControlState.Normal)
         title.setImage(UIImage(named: "navigationbar_arrow_up"), forState: UIControlState.Selected)
         title.addTarget(self, action: Selector("clickedTitle"), forControlEvents: UIControlEvents.TouchUpInside)

@@ -10,7 +10,7 @@ import UIKit
 
 class BaseTableViewController: UITableViewController {
 
-    var isLogin = true
+    var isLogin = UserAccount.isLogin()
     
     var visitorView:VisitorView?
     
@@ -33,7 +33,9 @@ class BaseTableViewController: UITableViewController {
     }
     
     func userLogin(){
-        WMJLog("loginClicked!")
+        let sb = UIStoryboard(name: "OAuth", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        presentViewController(vc!, animated: true, completion: nil)
     }
     
     func userRegister(){
